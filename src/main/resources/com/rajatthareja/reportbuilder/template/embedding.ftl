@@ -1,0 +1,1 @@
+<img class="materialboxed" data-caption='embedding' width="250" src="data:image/png;base64,${embedding.getData()}">

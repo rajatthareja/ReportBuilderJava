@@ -1,0 +1,557 @@
+[
+  {
+    "uri": "features/feature2.feature",
+    "id": "i-am-some-other-feature-for-testing-some-functionality",
+    "keyword": "Feature",
+    "name": "I am some other feature for testing some functionality",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "i-am-some-other-feature-for-testing-some-functionality;i-am-some-testing-scenario-of-other-functionality",
+        "keyword": "Scenario",
+        "name": "I am some testing scenario of other functionality",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@feature",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am give step of some feature",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 37000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I am when step of some feature",
+            "line": 6,
+            "output": [
+              "$ ABC % XYZ £"
+            ],
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 17000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I am then step of some feature",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 16000
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000
+            }
+          }
+        ]
+      },
+      {
+        "id": "i-am-some-other-feature-for-testing-some-functionality;i-am-some-testing-scenario-outline-of-other-functionality;;2",
+        "keyword": "Scenario Outline",
+        "name": "I am some testing scenario outline of other functionality",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@feature",
+            "line": 9
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am give step of some other feature",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 21000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I am when step of some other feature",
+            "line": 16,
+            "output": [
+              "123"
+            ],
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 17000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I am then step of some other feature",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 17000
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000
+            }
+          }
+        ]
+      },
+      {
+        "id": "i-am-some-other-feature-for-testing-some-functionality;i-am-some-testing-scenario-outline-of-other-functionality;;3",
+        "keyword": "Scenario Outline",
+        "name": "I am some testing scenario outline of other functionality",
+        "description": "",
+        "line": 17,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@feature",
+            "line": 9
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am give step of some other feature",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 20000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I am when step of some other feature",
+            "line": 17,
+            "output": [
+              "123"
+            ],
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 20000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I am then step of some this feature",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 22000
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000
+            }
+          }
+        ]
+      },
+      {
+        "id": "i-am-some-other-feature-for-testing-some-functionality;i-am-some-testing-scenario-of-some-functionality",
+        "keyword": "Scenario",
+        "name": "I am some testing scenario of some functionality",
+        "description": "",
+        "line": 20,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@high",
+            "line": 19
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am give step of some feature",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 18000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I am when step which will fail",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:25"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "I am some error (RuntimeError)\n./features/step_definitions/sample_steps.rb:26:in `/^I am when step which will fail$/'\nfeatures/feature2.feature:22:in `When I am when step which will fail'",
+              "duration": 218000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "skipped"
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I am then step of some feature",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:8"
+            },
+            "result": {
+              "status": "skipped"
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "skipped"
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65000
+            }
+          }
+        ]
+      },
+      {
+        "id": "i-am-some-other-feature-for-testing-some-functionality;i-am-some-other-testing-scenario-of-some-functionality",
+        "keyword": "Scenario",
+        "name": "I am some other testing scenario of some functionality",
+        "description": "",
+        "line": 26,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@low",
+            "line": 25
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am give step of some other feature",
+            "line": 27,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 17000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I am when step of some other feature",
+            "line": 28,
+            "output": [
+              "123"
+            ],
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 20000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I am then step of some other feature",
+            "line": 29,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:4"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 26000
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

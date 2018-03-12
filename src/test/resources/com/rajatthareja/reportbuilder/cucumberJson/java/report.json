@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Fill selenium easy input form",
+        "description": "",
+        "id": "selenium-easy-form-demo;fill-selenium-easy-input-form",
+        "after": [
+          {
+            "result": {
+              "duration": 382296538,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31539508400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I visit the selenium easy demo home page",
+            "match": {
+              "location": "SeleniumEasyDemoSteps.iVisitTheSeleniumEasyDemoHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1631419253,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to selenium easy input form page",
+            "match": {
+              "location": "SeleniumEasyDemoSteps.iNavigateToSeleniumEasyInputFormPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6237985665,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill the selenium easy input form",
+            "match": {
+              "location": "SeleniumEasyDemoSteps.iFillTheSeleniumEasyInputForm()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31586524,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see send button is enabled",
+            "match": {
+              "location": "SeleniumEasyDemoSteps.iShouldSeeSendButtonIsEnabled()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SeleniumEasyDemo"
+          }
+        ]
+      }
+    ],
+    "name": "Selenium easy form demo",
+    "description": "",
+    "id": "selenium-easy-form-demo",
+    "keyword": "Feature",
+    "uri": "src/main/resources/test/automation/features/SeleniumEasyDemo/Form.feature"
+  }
+]
