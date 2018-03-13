@@ -1,4 +1,4 @@
-# Report Builder
+# ReportBuilderJava
 [![Build status](https://travis-ci.org/rajatthareja/ReportBuilderJava.svg?branch=master)](https://travis-ci.org/rajatthareja/ReportBuilderJava)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.rajatthareja/reportbuilder/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.rajatthareja/reportbuilder)
 
