@@ -17,7 +17,7 @@ Maven dependencies for Report Builder:
 <dependency>
     <groupId>com.rajatthareja</groupId>
     <artifactId>reportbuilder</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 
 ```
@@ -27,6 +27,7 @@ Maven dependencies for Report Builder:
 ```java
 
 import com.rajatthareja.reportbuilder.ReportBuilder;
+import com.rajatthareja.reportbuilder.Color;
 import org.json.JSONObject;
 
 import java.io.File;
@@ -49,6 +50,9 @@ class MyClass {
         // Set Report Title
         reportBuilder.setReportTitle("My Test Report");
         
+        // Set Report Color for more visit http://materializecss.com/color.html
+        reportBuilder.setReportColor(Color.PURPLE);
+        
         // Add additional info for Report
         reportBuilder.setAdditionalInfo("Environment", "My Environment");
 
@@ -68,7 +72,7 @@ class MyClass {
 
 **Note:** Java 8 is required.
 
-[View Java Docs](https://oss.sonatype.org/service/local/repositories/releases/archive/com/rajatthareja/reportbuilder/1.0.0/reportbuilder-1.0.0-javadoc.jar/!/index.html) for more details.
+[View Java Docs](https://oss.sonatype.org/service/local/repositories/releases/archive/com/rajatthareja/reportbuilder/1.0.1/reportbuilder-1.0.1-javadoc.jar/!/index.html) for more details.
 
 ## Report Builder for Ruby
 

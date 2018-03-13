@@ -22,7 +22,7 @@ import java.util.Map;
  */
 public class ReportBuilder {
 
-    private String reportTitle, reportDirectory, reportFileName;
+    private String reportTitle, reportDirectory, reportFileName, reportColor;
     private Map<String, String> additionalInfo;
 
     /**
@@ -126,12 +126,40 @@ public class ReportBuilder {
     }
 
     /**
+     * Ger Report Color
+     *
+     * @return Report color
+     */
+    public String getReportColor() {
+        return reportColor;
+    }
+
+    /**
+     * Set Report color
+     *
+     * @param reportColor Report Color
+     */
+    public void setReportColor(String reportColor) {
+        this.reportColor = reportColor;
+    }
+
+    /**
+     * Set Report color
+     *
+     * @param reportColor Report Color
+     */
+    public void setReportColor(Color reportColor) {
+        this.reportColor = reportColor.toString();
+    }
+
+    /**
      * Creates report builder object for customizing and building report
      */
     public ReportBuilder() {
         reportDirectory = "";
         reportFileName = "report";
         reportTitle = "Test Report";
+        reportColor = Color.BROWN.toString();
         additionalInfo = new HashMap<>();
     }
 
@@ -149,6 +177,7 @@ public class ReportBuilder {
 
         Map<String, Object> data = new HashMap<>();
         data.put("reportTitle", reportTitle);
+        data.put("reportColor", reportColor);
         data.put("additionalInfo", additionalInfo);
         data.put("report", report);
 

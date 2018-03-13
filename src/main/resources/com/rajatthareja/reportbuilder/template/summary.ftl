@@ -1,5 +1,5 @@
-<div id="summary" class="col s12 brown lighten-5">
-    <table id="summaryTable" class="bordered brown lighten-1 white-text">
+<div id="summary" class="col s12 ${reportColor} lighten-5">
+    <table id="summaryTable" class="bordered ${reportColor} lighten-1 white-text">
         <thead>
         <tr>
             <th>Feature</th>

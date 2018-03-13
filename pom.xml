@@ -6,7 +6,7 @@
 
     <groupId>com.rajatthareja</groupId>
     <artifactId>reportbuilder</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>Report Builder</name>
     <description>Merge Cucumber JSON reports and build HTML Test Report</description>

@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
-    <link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.4/css/report.builder.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/rajatthareja/ReportBuilderJava/v1.0.1/css/report.builder.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
@@ -19,7 +19,7 @@
 
 <#include "header.ftl">
 
-<main class="brown lighten-5">
+<main class="${reportColor} lighten-5">
     <div class="row">
 
         <#include "overview.ftl">
@@ -52,6 +52,6 @@
         $('li:empty').remove();
     });
 </script>
-<script src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.4/js/report.builder.min.js"></script>
+<script src="https://cdn.rawgit.com/rajatthareja/ReportBuilderJava/v1.0.1/js/report.builder.min.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<div id="overview" class="col s12 brown lighten-5">
+<div id="overview" class="col s12 ${reportColor} lighten-5">
     <div class="row">
         <div class="col m4 s12">
             <canvas id="featuresDoughnut" width="400" height="400"></canvas>
