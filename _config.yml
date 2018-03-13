@@ -1,0 +1,1 @@
+exclude: [".gitignore", ".travis.yml", "src", "CNAME", "css", "js", "pom.xml"]
