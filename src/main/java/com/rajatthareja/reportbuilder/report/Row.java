@@ -24,4 +24,9 @@ public class Row {
     public void setCells(List<String> cells) {
         this.cells = cells;
     }
+
+    @Override
+    public String toString() {
+        return getCells().toString();
+    }
 }
