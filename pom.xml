@@ -10,7 +10,7 @@
 
     <name>Report Builder</name>
     <description>Merge Cucumber JSON reports and build HTML Test Report</description>
-    <url>https://github.com/rajatthareja/ReportBuilderJava</url>
+    <url>http://reportbuilderjava.rajatthareja.com</url>
 
     <licenses>
         <license>
@@ -23,7 +23,7 @@
         <developer>
             <name>Rajat Thareja</name>
             <email>rajat.thareja.1990@gmail.com</email>
-            <url>https://github.com/rajatthareja</url>
+            <url>http://rajatthareja.com</url>
         </developer>
     </developers>
 

@@ -6,7 +6,7 @@ Java API to merge Cucumber JSON reports and build HTML Test Report
 
 ## Sample Reports
 
-[View Sample Report](http://reportbuilder.rajatthareja.com/sample/report.html)
+[View Sample Report](http://reportbuilderjava.rajatthareja.com/sample/report.html)
 
 ## Include Report Builder in your project
 
