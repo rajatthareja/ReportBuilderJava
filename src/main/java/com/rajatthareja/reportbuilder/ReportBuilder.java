@@ -169,6 +169,15 @@ public class ReportBuilder {
      * @param cucumberJsonReports list of json files or directory containing json files or json file urls or json strings or json objects
      */
     public void build(List<Object> cucumberJsonReports) {
+        build(cucumberJsonReports.toArray());
+    }
+
+        /**
+         * Build consolidated html report from given cucumber json reports
+         *
+         * @param cucumberJsonReports list of json files or directory containing json files or json file urls or json strings or json objects
+         */
+    public void build(Object ... cucumberJsonReports) {
 
         Report report = new Report(cucumberJsonReports);
 

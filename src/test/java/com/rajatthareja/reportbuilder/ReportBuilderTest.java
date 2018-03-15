@@ -26,7 +26,7 @@ public class ReportBuilderTest {
             ReportBuilder reportBuilder = new ReportBuilder();
             reportBuilder.setReportTitle("Sample Test Report");
             reportBuilder.setAdditionalInfo("Info", "Some Info");
-            reportBuilder.build(Arrays.asList(new File(javaCucumberJson), new File(rubyCucumberJson)));
+            reportBuilder.build(new File(javaCucumberJson), new File(rubyCucumberJson));
 
             Assert.assertEquals(new String(Files.readAllBytes(Paths.get(report))),
                     new String(Files.readAllBytes(Paths.get("report.html"))));

@@ -17,7 +17,7 @@ Maven dependencies for Report Builder:
 <dependency>
     <groupId>com.rajatthareja</groupId>
     <artifactId>reportbuilder</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 
 ```
@@ -72,7 +72,7 @@ class MyClass {
 
 **Note:** Java 8 is required.
 
-[View Java Docs](https://oss.sonatype.org/service/local/repositories/releases/archive/com/rajatthareja/reportbuilder/1.0.1/reportbuilder-1.0.1-javadoc.jar/!/index.html) for more details.
+[View Java Docs](https://oss.sonatype.org/service/local/repositories/releases/archive/com/rajatthareja/reportbuilder/1.0.2/reportbuilder-1.0.2-javadoc.jar/!/index.html) for more details.
 
 ## Report Builder for Ruby
 

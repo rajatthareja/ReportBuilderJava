@@ -41,10 +41,10 @@ public class Report {
      *
      * @param cucumberJsonReports list of json files or directory containing json files or json file urls or json strings or json objects
      */
-    public Report(List<Object> cucumberJsonReports) {
+    public Report(Object ... cucumberJsonReports) {
 
         List<Object> jsonReports = new ArrayList<>();
-        jsonReports.addAll(cucumberJsonReports);
+        jsonReports.addAll(Arrays.asList(cucumberJsonReports));
         List<Object> reportDirs = jsonReports.stream().filter(r -> r instanceof File && ((File) r).isDirectory()).collect(Collectors.toList());
 
         jsonReports.removeAll(reportDirs);
