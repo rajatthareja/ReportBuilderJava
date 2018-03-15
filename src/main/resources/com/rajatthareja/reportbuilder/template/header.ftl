@@ -14,9 +14,9 @@
                 <li class="tab col s3"><a class="btn ${reportColor} lighten-3 white-text waves-effect waves-light tooltipped"
                                           data-tooltip="Summary" href="#summary"><i
                         class="material-icons">view_comfy</i></a></li>
-                <li class="tab col s3"><a class="btn ${reportColor} lighten-3 white-text waves-effect waves-light tooltipped"
+                <#if report.getErrors()?has_content><li class="tab col s3"><a class="btn ${reportColor} lighten-3 white-text waves-effect waves-light tooltipped"
                                           data-tooltip="Errors" href="#errors"><i class="material-icons">bug_report</i></a>
-                </li>
+                </li></#if>
             </ul>
         </div>
     </div>
