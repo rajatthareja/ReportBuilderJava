@@ -1,6 +1,6 @@
 # ReportBuilderJava
 [![Build status](https://travis-ci.org/rajatthareja/ReportBuilderJava.svg?branch=master)](https://travis-ci.org/rajatthareja/ReportBuilderJava)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.rajatthareja/reportbuilder/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.rajatthareja/reportbuilder)
+[![Maven Central](https://img.shields.io/maven-central/v/com.rajatthareja/reportbuilder.svg)](https://mvnrepository.com/artifact/com.rajatthareja/reportbuilder/1.0.2)
 
 Java API to merge Cucumber JSON reports and build HTML Test Report
 
@@ -10,7 +10,7 @@ Java API to merge Cucumber JSON reports and build HTML Test Report
 
 ## Include Report Builder in your project
 
-Maven dependencies for Report Builder:
+Maven dependency for Report Builder:
 
 ```xml
 
@@ -74,9 +74,9 @@ class MyClass {
 
 [View Java Docs](https://oss.sonatype.org/service/local/repositories/releases/archive/com/rajatthareja/reportbuilder/1.0.2/reportbuilder-1.0.2-javadoc.jar/!/index.html) for more details.
 
-## Report Builder for Ruby
+## Report Builder Ruby Gem
 
-[Go to Ruby Report Builder](http://reportbuilder.rajatthareja.com)
+[Report Builder](http://reportbuilder.rajatthareja.com)
 
 ## Contributing
 
