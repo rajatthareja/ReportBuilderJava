@@ -70,7 +70,7 @@ class MyClass {
 
 ```
 
-**Note:** Java 8 is required.
+**Note:** Java > 8 is required.
 
 [View Java Docs](https://oss.sonatype.org/service/local/repositories/releases/archive/com/rajatthareja/reportbuilder/1.0.2/reportbuilder-1.0.2-javadoc.jar/!/index.html) for more details.
 
