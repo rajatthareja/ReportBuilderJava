@@ -17,4 +17,9 @@
             <#include "embedding.ftl">
         </#list>
     </#if>
+    <#if step.getOutput()??>
+        <#list step.getOutput() as output>
+            <br>${output}
+        </#list>
+    </#if>
 </li>

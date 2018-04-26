@@ -14,6 +14,15 @@ public class Step {
     private List<Embedding> embeddings;
     private List<Hook> after;
     private List<Hook> before;
+    private List<String> output;
+
+    public List<String> getOutput() {
+        return output;
+    }
+
+    public void setOutput(List<String> output) {
+        this.output = output;
+    }
 
     public Result getResult() {
         return result;
