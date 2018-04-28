@@ -1,5 +1,5 @@
 <li class="collection-item step ${step.getResult().getStatus()}">
-    <b>${step.getKeyword()}</b> ${step.getName()}
+    <b>${step.getKeyword()}</b> ${step.getName()} (${report.getDurationString(step.getDuration())})
     <#if step.getRows()??>
         <table>
             <tbody>

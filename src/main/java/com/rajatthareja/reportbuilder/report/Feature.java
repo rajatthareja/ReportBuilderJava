@@ -3,6 +3,7 @@ package com.rajatthareja.reportbuilder.report;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.time.Duration;
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -15,6 +16,16 @@ public class Feature {
     private String uri;
     private List<Scenario> scenarios;
     private List<Tag> tags;
+
+    public Duration getDuration() {
+        Duration duration = Duration.ofSeconds(0);
+        if (scenarios != null) {
+            for (Scenario scenario : scenarios) {
+                duration = duration.plus(scenario.getDuration());
+            }
+        }
+        return duration;
+    }
 
     public String getStatus() {
         return scenarios.stream().anyMatch(s -> s.getStatus().equals("failed")) ? "broken" :

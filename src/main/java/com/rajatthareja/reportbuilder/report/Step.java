@@ -2,6 +2,7 @@ package com.rajatthareja.reportbuilder.report;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.time.Duration;
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -15,6 +16,10 @@ public class Step {
     private List<Hook> after;
     private List<Hook> before;
     private List<String> output;
+
+    public Duration getDuration() {
+        return Duration.ofNanos(result.getDuration());
+    }
 
     public List<String> getOutput() {
         return output;

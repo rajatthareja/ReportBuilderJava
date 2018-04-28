@@ -4,7 +4,7 @@
         <li class="feature ${feature.getStatus()}">
             <div class="collapsible-header ${reportColor} lighten-1 white-text waves-effect waves-light">
                 <i class="material-icons white-text">featured_play_list</i>
-                <b>${feature.getKeyword()}</b>&nbsp;${feature.getName()}
+                <b>${feature.getKeyword()}</b>&nbsp;${feature.getName()} (${report.getDurationString(feature.getDuration())})
             </div>
             <div class="collapsible-body ${reportColor} lighten-4">
                 <#if feature.getTags()??>
@@ -23,7 +23,7 @@
                         <#else>
                         <li class="collection-item scenario ${scenario.getStatus()}">
                             <a class="waves-effect waves-light modal-trigger white-text" href="#f${feature?index}s${scenario?index}">
-                                <b>${scenario.getKeyword()}</b> ${scenario.getName()}
+                                <b>${scenario.getKeyword()}</b> ${scenario.getName()} (${report.getDurationString(scenario.getDuration())})
                             </a>
                         </li>
                         </#if>

@@ -2,6 +2,7 @@ package com.rajatthareja.reportbuilder.report;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +19,24 @@ public class Scenario {
     private List<Step> steps = new ArrayList<>();
     private String type;
     private List<Example> examples;
+
+    public Duration getDuration() {
+        Duration duration = Duration.ofSeconds(0);
+        for(Step step : steps) {
+            duration = duration.plus(step.getDuration());
+        }
+        if (before != null) {
+            for(Hook hook: before) {
+                duration = duration.plus(hook.getDuration());
+            }
+        }
+        if (after != null) {
+            for(Hook hook: after) {
+                duration = duration.plus(hook.getDuration());
+            }
+        }
+        return duration;
+    }
 
     public String getStatus() {
         return steps.stream().anyMatch(s -> s.getResult().getStatus().equals("failed")) ? "failed" :

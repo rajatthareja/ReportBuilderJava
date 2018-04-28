@@ -15,6 +15,7 @@
         <div class="col m4 s12">
             <table id="metaData" class="bordered">
                 <tbody>
+                <tr><th>Duration</th><td>${report.getDurationString(report.getDuration())}</td></tr>
                 <#list additionalInfo?keys as key>
                 <tr><th>${key}</th><td>${additionalInfo[key]}</td></tr>
                 </#list>

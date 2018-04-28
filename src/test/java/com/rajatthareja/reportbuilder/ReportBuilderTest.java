@@ -24,7 +24,9 @@ public class ReportBuilderTest {
 
             ReportBuilder reportBuilder = new ReportBuilder();
             reportBuilder.setReportTitle("Sample Test Report");
-            reportBuilder.setAdditionalInfo("Info", "Some Info");
+            reportBuilder.setAdditionalInfo("OS", System.getProperty("os.name"));
+            reportBuilder.setAdditionalInfo("Browser", "Chrome");
+            reportBuilder.setAdditionalInfo("Info", "More Info");
             reportBuilder.build(new File(javaCucumberJson), new File(rubyCucumberJson));
 
             Assert.assertEquals(new String(Files.readAllBytes(Paths.get(report))),

@@ -21,6 +21,7 @@ import java.nio.charset.CharsetDecoder;
 import java.nio.charset.CodingErrorAction;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -35,6 +36,7 @@ public class Report {
 
     private List<Feature> features = new ArrayList<>();
     private List<String> errors = new ArrayList<>();
+    private Duration duration = Duration.ofNanos(0);
 
     /**
      * Build consolidated list of features from given cucumber json reports
@@ -138,6 +140,7 @@ public class Report {
                 }
             }
             feature.setScenarios(new ArrayList<>((scenariosMap.values())));
+            duration = duration.plus(feature.getDuration());
         }
     }
 
@@ -202,5 +205,19 @@ public class Report {
      */
     public List<String> getErrors() {
         return errors;
+    }
+
+    /**
+     * Returns total execution duration
+     *
+     * @return Duration of execution
+     */
+    public Duration getDuration() {
+        return duration;
+    }
+
+    public String getDurationString(Duration duration) {
+        long s = duration.getSeconds();
+        return String.format("%d:%02d:%02d", s/3600, (s%3600)/60, (s%60));
     }
 }
