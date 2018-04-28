@@ -32,7 +32,7 @@ public class ReportBuilderTest {
             Assert.assertEquals(new String(Files.readAllBytes(Paths.get(report))),
                     new String(Files.readAllBytes(Paths.get("report.html"))));
         } finally {
-            Files.deleteIfExists(Paths.get("report.html"));
+//            Files.deleteIfExists(Paths.get("report.html"));
         }
     }
 }
