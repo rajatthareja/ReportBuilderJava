@@ -216,6 +216,11 @@ public class Report {
         return duration;
     }
 
+    /**
+     * Returns total execution duration string
+     *
+     * @return Duration of execution as string
+     */
     public String getDurationString(Duration duration) {
         long s = duration.getSeconds();
         return String.format("%d:%02d:%02d", s/3600, (s%3600)/60, (s%60));

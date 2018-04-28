@@ -24,7 +24,7 @@ public class ReportBuilderTest {
 
             ReportBuilder reportBuilder = new ReportBuilder();
             reportBuilder.setReportTitle("Sample Test Report");
-            reportBuilder.setAdditionalInfo("OS", System.getProperty("os.name"));
+            reportBuilder.setAdditionalInfo("OS", "Mac OS X");
             reportBuilder.setAdditionalInfo("Browser", "Chrome");
             reportBuilder.setAdditionalInfo("Info", "More Info");
             reportBuilder.build(new File(javaCucumberJson), new File(rubyCucumberJson));
@@ -32,7 +32,7 @@ public class ReportBuilderTest {
             Assert.assertEquals(new String(Files.readAllBytes(Paths.get(report))),
                     new String(Files.readAllBytes(Paths.get("report.html"))));
         } finally {
-//            Files.deleteIfExists(Paths.get("report.html"));
+            Files.deleteIfExists(Paths.get("report.html"));
         }
     }
 }
