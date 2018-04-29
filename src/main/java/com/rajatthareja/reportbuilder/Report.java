@@ -219,6 +219,8 @@ public class Report {
     /**
      * Returns total execution duration string
      *
+     * @param duration total execution duration
+     *
      * @return Duration of execution as string
      */
     public String getDurationString(Duration duration) {
