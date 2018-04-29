@@ -1,6 +1,6 @@
 # ReportBuilderJava
 [![Build status](https://travis-ci.org/rajatthareja/ReportBuilderJava.svg?branch=master)](https://travis-ci.org/rajatthareja/ReportBuilderJava)
-[![Maven Central](https://img.shields.io/maven-central/v/com.rajatthareja/reportbuilder.svg)](https://mvnrepository.com/artifact/com.rajatthareja/reportbuilder/1.0.2)
+[![Maven Central](https://img.shields.io/maven-central/v/com.rajatthareja/reportbuilder.svg)](https://mvnrepository.com/artifact/com.rajatthareja/reportbuilder/1.0.3)
 
 Java API to merge Cucumber JSON reports and build HTML Test Report
 
@@ -17,7 +17,7 @@ Maven dependency for Report Builder:
 <dependency>
     <groupId>com.rajatthareja</groupId>
     <artifactId>reportbuilder</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 </dependency>
 
 ```
@@ -75,7 +75,7 @@ class MyClass {
 
 **Note:** Java > 8 is required.
 
-[View Java Docs](https://oss.sonatype.org/service/local/repositories/releases/archive/com/rajatthareja/reportbuilder/1.0.2/reportbuilder-1.0.2-javadoc.jar/!/index.html) for more details.
+[View Java Docs](https://oss.sonatype.org/service/local/repositories/releases/archive/com/rajatthareja/reportbuilder/1.0.3/reportbuilder-1.0.3-javadoc.jar/!/index.html) for more details.
 
 ## Voice Control Report 
 

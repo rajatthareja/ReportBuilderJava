@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
-    <link href="https://cdn.rawgit.com/rajatthareja/ReportBuilderJava/v1.0.2/css/report.builder.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/rajatthareja/ReportBuilderJava/v1.0.3/css/report.builder.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
@@ -52,7 +52,7 @@
         $('li:empty').remove();
     });
 </script>
-<script src="https://cdn.rawgit.com/rajatthareja/ReportBuilderJava/v1.0.2/js/report.builder.min.js"></script>
+<script src="https://cdn.rawgit.com/rajatthareja/ReportBuilderJava/v1.0.3/js/report.builder.min.js"></script>
 
 <#if voiceControl>
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
