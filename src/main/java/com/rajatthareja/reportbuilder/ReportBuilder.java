@@ -24,6 +24,7 @@ public class ReportBuilder {
 
     private String reportTitle, reportDirectory, reportFileName, reportColor;
     private Map<String, String> additionalInfo;
+    private boolean voiceControl;
 
     /**
      * Get output report directory
@@ -153,6 +154,20 @@ public class ReportBuilder {
     }
 
     /**
+     * Enable voice control for report
+     */
+    public void enableVoiceControl() {
+        voiceControl = true;
+    }
+
+    /**
+     * Disable voice control
+     */
+    public void disableVoiceControl() {
+        voiceControl = false;
+    }
+
+    /**
      * Creates report builder object for customizing and building report
      */
     public ReportBuilder() {
@@ -161,6 +176,7 @@ public class ReportBuilder {
         reportTitle = "Test Report";
         reportColor = Color.BROWN.toString();
         additionalInfo = new HashMap<>();
+        voiceControl = false;
     }
 
     /**
@@ -188,6 +204,7 @@ public class ReportBuilder {
         data.put("reportTitle", reportTitle);
         data.put("reportColor", reportColor);
         data.put("additionalInfo", additionalInfo);
+        data.put("voiceControl", voiceControl);
         data.put("report", report);
 
         new File(reportDirectory).mkdirs();

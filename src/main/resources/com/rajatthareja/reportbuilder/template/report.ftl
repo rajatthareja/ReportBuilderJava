@@ -53,5 +53,31 @@
     });
 </script>
 <script src="https://cdn.rawgit.com/rajatthareja/ReportBuilderJava/v1.0.2/js/report.builder.min.js"></script>
+
+<#if voiceControl>
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+    var commands = {
+        'show :tab': function(tab) {
+            if (tab === "overview") {
+                $("a[data-tooltip='Results Overview']").click();
+            } else if (tab === "features" || tab === "feature") {
+                $("a[data-tooltip='Scenarios by Features']").click();
+            } else if (tab === "summary") {
+                $("a[data-tooltip='Scenarios Summary Table']").click();
+            } else if (tab === "errors" || tab === "error" || tab === "failed" || tab === "bugs") {
+                $("a[data-tooltip='Failed Scenarios']").click();
+            }
+        },
+        'search *search': function (search) {
+            $("a[data-tooltip='Scenarios Summary Table']").click();
+            $("input[type='search']").val(search);
+            $('table#summaryTable').DataTable().search(search).draw();
+        }
+    };
+    annyang.addCommands(commands);
+    annyang.start();
+</script>
+</#if>
 </body>
 </html>

@@ -53,6 +53,9 @@ class MyClass {
         // Set Report Color for more visit http://materializecss.com/color.html
         reportBuilder.setReportColor(Color.PURPLE);
         
+        // Enable voice control for report
+        reportBuilder.enableVoiceControl();
+        
         // Add additional info for Report
         reportBuilder.setAdditionalInfo("Environment", "My Environment");
 
@@ -73,6 +76,12 @@ class MyClass {
 **Note:** Java > 8 is required.
 
 [View Java Docs](https://oss.sonatype.org/service/local/repositories/releases/archive/com/rajatthareja/reportbuilder/1.0.2/reportbuilder-1.0.2-javadoc.jar/!/index.html) for more details.
+
+## Voice Control Report 
+
+Use voice commands for easy navigation and search
+* show ( overview, features, summary, errors )
+* search { Keywords }
 
 ## Report Builder Ruby Gem
 
