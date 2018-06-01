@@ -10,7 +10,7 @@
 
     <name>Report Builder</name>
     <description>Merge Cucumber JSON reports and build HTML Test Report</description>
-    <url>http://reportbuilderjava.rajatthareja.com</url>
+    <url>https://reportbuilderjava.rajatthareja.com</url>
 
     <licenses>
         <license>
