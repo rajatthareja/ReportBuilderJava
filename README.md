@@ -6,7 +6,7 @@ Java API to merge Cucumber JSON reports and build HTML Test Report
 
 ## Sample Reports
 
-[View Sample Report](http://reportbuilderjava.rajatthareja.com/sample/report.html)
+[View Sample Report](https://reportbuilderjava.rajatthareja.com/sample/report.html)
 
 ## Include Report Builder in your project
 
@@ -85,7 +85,7 @@ Use voice commands for easy navigation and search
 
 ## Report Builder Ruby Gem
 
-[Report Builder](http://reportbuilder.rajatthareja.com)
+[Report Builder](https://reportbuilder.rajatthareja.com)
 
 ## Contributing
 
