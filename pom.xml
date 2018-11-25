@@ -37,10 +37,10 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <json.version>20180130</json.version>
-        <jackson-databind.version>2.9.4</jackson-databind.version>
-        <freemarker.version>2.3.23</freemarker.version>
-        <junit.version>4.12</junit.version>
+        <json.version>20180813</json.version>
+        <jackson-databind.version>2.9.7</jackson-databind.version>
+        <freemarker.version>2.3.28</freemarker.version>
+        <junit.version>5.3.1</junit.version>
     </properties>
 
     <dependencies>
